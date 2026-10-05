@@ -443,6 +443,15 @@ h1, h2, h3, h4 {
     color: var(--bg-dark);
 }
 
+@media (min-width: 993px) {
+    .about-grid.reverse-order .about-text {
+        order: 2;
+    }
+    .about-grid.reverse-order .about-image-wrapper {
+        order: 1;
+    }
+}
+
 @media (max-width: 992px) {
     .about-grid {
         grid-template-columns: 1fr;

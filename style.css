@@ -39,6 +39,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -47,6 +49,7 @@ body {
     background-color: var(--bg-main);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -252,7 +255,16 @@ h1, h2, h3, h4 {
     color: var(--bg-dark);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
     .navbar .btn-primary {
         display: inline-flex;
     }
